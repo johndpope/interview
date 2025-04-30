@@ -4,6 +4,7 @@ import { User, AuthProvider } from '@/types/common';
 import { generateId } from '@/utils/supabaseUtils';
 import { getVitePort } from '@/utils/viteUtils';
 import { User as SupabaseUser, Session } from '@supabase/supabase-js';
+require('dotenv').config();
 
 // Add type declaration for Google Identity API
 interface GoogleAccount {
@@ -136,7 +137,7 @@ export function useAuth() {
                         reject(new Error("Google API not loaded"));
                         return;
                     }
-                    const client_id = import.meta.env.GOOGLE_CLIENT_ID || '';
+                    const client_id = process.env.GOOGLE_CLIENT_ID || '';
                     if (!client_id) {
                         reject(new Error("Google Client ID not configured"));
                         return;

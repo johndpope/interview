@@ -54,7 +54,7 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       dotenv:
-        specifier: ^16.4.7
+        specifier: ^16.5.0
         version: 16.5.0
       file-saver:
         specifier: ^2.0.5
