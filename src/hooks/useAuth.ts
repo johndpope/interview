@@ -4,7 +4,10 @@ import { User, AuthProvider } from '@/types/common';
 import { generateId } from '@/utils/supabaseUtils';
 import { getVitePort } from '@/utils/viteUtils';
 import { User as SupabaseUser, Session } from '@supabase/supabase-js';
-require('dotenv').config();
+import dotenv from 'dotenv';
+
+// Load environment variables from .env file
+dotenv.config({ path: './.env' });
 
 // Add type declaration for Google Identity API
 interface GoogleAccount {
