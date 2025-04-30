@@ -95,7 +95,12 @@ export default defineConfig(({ mode }) => {
         server: {
             port: process.env.PORT ? parseInt(process.env.PORT) : 5173,
             historyApiFallback: true, // Support BrowserRouter in dev environment
+            allowedHosts: [
+                'app.nonprod.aws.mailopoly.com', // Add the host here
+                // Add other allowed hosts if needed
+            ]
         },
+        
         base: basePath
     };
 });
