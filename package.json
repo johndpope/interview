@@ -2,7 +2,7 @@
   "name": "interview",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://interview.hoanghuyduc.com",
+  "homepage": "https://app.nonprod.aws.mailopoly.com",
   "type": "module",
   "scripts": {
     "tailwindcss": "tailwindcss",
