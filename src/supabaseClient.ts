@@ -1,11 +1,13 @@
 import { createClient } from '@supabase/supabase-js';
 import { User } from '@/types/common';
-import { getVitePort } from '@/utils/viteUtils';
 
-const isDevelopment = import.meta.env.DEV;
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL ||
-    (isDevelopment ? `http://localhost:${getVitePort()}` : 'https://nusledxyrnjehfiohsmz.supabase.co');
-const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
+// const isDevelopment = import.meta.env.DEV;
+const SUPABASE_URL = 'https://supabase.nonprod.aws.mailopoly.com'
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyAgCiAgICAicm9sZSI6ICJhbm9uIiwKICAgICJpc3MiOiAic3VwYWJhc2UtZGVtbyIsCiAgICAiaWF0IjogMTY0MTc2OTIwMCwKICAgICJleHAiOiAxNzk5NTM1NjAwCn0.dc_X5iR_VP_qT0zsiyj_I_OZ2T9FtRU2BBNWN8Bu4GE';
+
+
+
 const SITE_URL = window.location.origin;
 const REDIRECT_URL = `${SITE_URL}/auth/callback`;
 

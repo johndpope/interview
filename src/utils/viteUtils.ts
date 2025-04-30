@@ -11,7 +11,7 @@ export const getVitePort = (defaultPort: number = 5173): string => {
     }
 
     // Fall back to environment variable or default
-    const port = import.meta.env.VITE_PORT || defaultPort;
+    const port = import.meta.env.PORT || defaultPort;
     return port.toString();
 };
 

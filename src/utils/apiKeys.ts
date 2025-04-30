@@ -78,7 +78,7 @@ export const getApiKey = (service: string, userId?: string): string => {
     }
 
     // Fallback to environment variables
-    return window.__ENV?.[`VITE_${service.toUpperCase()}_API_KEY`] ||
-        import.meta.env[`VITE_${service.toUpperCase()}_API_KEY`] ||
+    return window.__ENV?.[`${service.toUpperCase()}_API_KEY`] ||
+        import.meta.env[`${service.toUpperCase()}_API_KEY`] ||
         '';
 };

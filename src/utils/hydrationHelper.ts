@@ -37,8 +37,8 @@ export function ensureString(value: any): string {
  */
 export function getCustomDomain(): string | null {
     // Try to get from import.meta if available (Vite environment)
-    if (import.meta?.env?.VITE_CUSTOM_DOMAIN) {
-        return import.meta.env.VITE_CUSTOM_DOMAIN;
+    if (import.meta?.env?.CUSTOM_DOMAIN) {
+        return import.meta.env.CUSTOM_DOMAIN;
     }
 
     // Try to get from window.ENV if defined (can be injected at build time)

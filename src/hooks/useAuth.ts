@@ -136,7 +136,7 @@ export function useAuth() {
                         reject(new Error("Google API not loaded"));
                         return;
                     }
-                    const client_id = import.meta.env.VITE_GOOGLE_CLIENT_ID || '';
+                    const client_id = import.meta.env.GOOGLE_CLIENT_ID || '';
                     if (!client_id) {
                         reject(new Error("Google Client ID not configured"));
                         return;

@@ -36,11 +36,11 @@ npm install
 3. Set up environment variables:
    Create a `.env.local` file in the root directory:
 ```bash
-VITE_GOOGLE_SHEET_API_KEY=your_google_sheet_api_key
-VITE_SPREADSHEET_ID=your_spreadsheet_id
-VITE_OPENCHAT_API_KEY=your_chatgpt_api_key
-VITE_GEMINI_API_KEY=your_gemini_api_key
-VITE_MISTRAL_API_KEY=your_mistral_api_key
+GOOGLE_SHEET_API_KEY=your_google_sheet_api_key
+SPREADSHEET_ID=your_spreadsheet_id
+OPENCHAT_API_KEY=your_chatgpt_api_key
+GEMINI_API_KEY=your_gemini_api_key
+MISTRAL_API_KEY=your_mistral_api_key
 ```
 
 ## Google Sheets Setup
@@ -115,20 +115,20 @@ interview/
 
 | Variable | Description | Required |
 |----------|-------------|----------|
-| `VITE_GOOGLE_SHEET_API_KEY` | Google Sheets API key | Yes |
-| `VITE_SPREADSHEET_ID` | ID of your Google Sheet | Yes |
-| `VITE_OPENAI_API_KEY` | OpenAI API key | Yes |
-| `VITE_OPENCHAT_API_KEY` | OpenChat API key | Yes |
-| `VITE_GEMINI_API_KEY` | Gemini API key | Yes |
-| `VITE_MISTRAL_API_KEY` | Mistral API key | Yes |
-| `VITE_PERFLEXITY_API_KEY` | Perflexity API key | Yes |
-| `VITE_GOOGLE_CLIENT_ID` | Google OAuth Client ID | Yes |
-| `VITE_GOOGLE_CLIENT_SECRET` | Google OAuth Client Secret | Yes |
-| `VITE_GOOGLE_REFRESH_TOKEN` | Google OAuth Refresh Token | Yes |
-| `VITE_GITHUB_CLIENT_ID` | GitHub OAuth Client ID | Yes |
-| `VITE_SUPABASE_URL` | Supabase URL | Yes |
-| `VITE_SUPABASE_ANON_KEY` | Supabase Anonymous Key | Yes |
-| `VITE_PORT` | Development server port | No |
+| `GOOGLE_SHEET_API_KEY` | Google Sheets API key | Yes |
+| `SPREADSHEET_ID` | ID of your Google Sheet | Yes |
+| `OPENAI_API_KEY` | OpenAI API key | Yes |
+| `OPENCHAT_API_KEY` | OpenChat API key | Yes |
+| `GEMINI_API_KEY` | Gemini API key | Yes |
+| `MISTRAL_API_KEY` | Mistral API key | Yes |
+| `PERFLEXITY_API_KEY` | Perflexity API key | Yes |
+| `GOOGLE_CLIENT_ID` | Google OAuth Client ID | Yes |
+| `GOOGLE_CLIENT_SECRET` | Google OAuth Client Secret | Yes |
+| `GOOGLE_REFRESH_TOKEN` | Google OAuth Refresh Token | Yes |
+| `GITHUB_CLIENT_ID` | GitHub OAuth Client ID | Yes |
+| `SUPABASE_URL` | Supabase URL | Yes |
+| `SUPABASE_ANON_KEY` | Supabase Anonymous Key | Yes |
+| `PORT` | Development server port | No |
 
 ## Repository Secrets for Deployment
 

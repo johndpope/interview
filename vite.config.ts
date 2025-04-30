@@ -79,8 +79,8 @@ export default defineConfig(({ mode }) => {
         ],
         define: {
             // Make custom domain and GitHub Pages status available at build time
-            'import.meta.env.VITE_CUSTOM_DOMAIN': JSON.stringify(customDomain),
-            'import.meta.env.VITE_IS_GITHUB_PAGES': isGitHubPages
+            'import.meta.env.CUSTOM_DOMAIN': JSON.stringify(customDomain),
+            'import.meta.env.IS_GITHUB_PAGES': isGitHubPages
         },
         resolve: {
             alias: {
@@ -93,7 +93,7 @@ export default defineConfig(({ mode }) => {
             outDir: 'dist',
         },
         server: {
-            port: process.env.VITE_PORT ? parseInt(process.env.VITE_PORT) : 5173,
+            port: process.env.PORT ? parseInt(process.env.PORT) : 5173,
             historyApiFallback: true, // Support BrowserRouter in dev environment
         },
         base: basePath

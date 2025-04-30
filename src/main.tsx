@@ -8,7 +8,7 @@ import './index.css';
 
 // Detect if we're running on GitHub Pages
 const isGitHubPages = window.location.hostname.includes('.github.io') ||
-  import.meta.env.VITE_IS_GITHUB_PAGES === true;
+  import.meta.env.IS_GITHUB_PAGES === true;
 
 // Log routing mode for debugging
 console.log(`Using ${isGitHubPages ? 'HashRouter' : 'BrowserRouter'} for routing`);
